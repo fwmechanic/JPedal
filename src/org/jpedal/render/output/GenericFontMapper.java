@@ -54,8 +54,6 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import com.sun.org.apache.xml.internal.serializer.OutputPropertiesFactory;
-
 /**
  * control translation of fonts for display
  */
@@ -576,7 +574,7 @@ public class GenericFontMapper implements org.jpedal.render.output.FontMapper {
 			TransformerFactory transformerFactory = TransformerFactory.newInstance();
 			Transformer transformer = transformerFactory.newTransformer();
 			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-			transformer.setOutputProperty(OutputPropertiesFactory.S_KEY_INDENT_AMOUNT, "4");
+			transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
 			DOMSource source = new DOMSource(document);
 			StreamResult result = new StreamResult(new File(fileName));
 			transformer.transform(source, result);
