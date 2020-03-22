@@ -86,7 +86,7 @@ public interface GUIData {
 	void setJavascript(Javascript javascript);
 
 	/**
-	 * valid flag used by Javascript to allow rollback &nbsp call ttf to reset all values held
+	 * valid flag used by Javascript to allow rollback and call ttf to reset all values held
 	 * 
 	 * @param value
 	 *            - the value to change it to

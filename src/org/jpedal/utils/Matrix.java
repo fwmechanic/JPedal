@@ -40,7 +40,7 @@ public class Matrix {
 	public Matrix() {}
 
 	// ////////////////////////////////////////////////////////////////////////
-	/** multiply two 3 * 3 matrices together & return result */
+	/** multiply two 3 * 3 matrices together and return result */
 	final public static float[][] multiply(float[][] matrix1, float[][] matrix2) {
 
 		// output matrix for results
@@ -67,7 +67,7 @@ public class Matrix {
 
 	// ////////////////////////////////////////////////////////////////////////
 
-	/** multiply two 3 * 3 matrices together & return result */
+	/** multiply two 3 * 3 matrices together and return result */
 	final public static double[][] multiply(double[][] matrix1, double[][] matrix2) {
 
 		// output matrix for results

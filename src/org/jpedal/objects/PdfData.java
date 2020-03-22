@@ -37,7 +37,7 @@ import org.jpedal.utils.Fonts;
 
 /**
  * <p>
- * holds text data for extraction & manipulation
+ * holds text data for extraction and manipulation
  * </p>
  * <p>
  * Pdf routines create 'raw' text data

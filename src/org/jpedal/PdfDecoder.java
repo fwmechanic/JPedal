@@ -1999,16 +1999,15 @@ public class PdfDecoder extends JPanel {
 		else return false;
 	}
 
-	// <start-demo>
-	/**
-	 * //<end-demo>
-	 * 
-	 * 
-	 * 
-	 * 
+	/*
 	 * /** show if encryption password has been supplied or set a certificate
 	 */
 	final public boolean isPasswordSupplied() {
+
+	// <start-demo>
+	/**
+	 * //<end-demo> /
+	 **/
 
 		FileAccess fileAccess = (FileAccess) getJPedalObject(PdfDictionary.FileAccess);
 		return fileAccess.isPasswordSupplied(this.currentPdfFile);

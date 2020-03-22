@@ -6303,7 +6303,7 @@ public class SwingGUI extends GUI implements GUIFactory {
 	// <link><a name="exampledraw" />
 	/**
 	 * example of a custom draw object
-	 * 
+	 * <pre>{@code
 	 * private static class ExampleCustomDrawObject implements JPedalCustomDrawObject {
 	 * 
 	 * private boolean isVisible=true;
@@ -6375,6 +6375,7 @@ public class SwingGUI extends GUI implements GUIFactory {
 	 * public void setMedX(int medX) { this.medX = medX; }
 	 * 
 	 * public void setMedY(int medY) { this.medY = medY; } }/
+	 * }</pre>
 	 **/
 
 	public void removeSearchWindow(boolean justHide) {

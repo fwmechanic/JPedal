@@ -80,7 +80,7 @@ public interface WizardPanelModel {
 	public abstract boolean canAdvance();
 
 	/**
-	 * In order to use the Card Layout in the wizard class each JPanel must have a unique String identifier. ie HashMap<String, JPanel>
+	 * In order to use the Card Layout in the wizard class each JPanel must have a unique String identifier. ie {@code HashMap<String, JPanel>}
 	 * 
 	 * @return A mapping of ID Strings to JPanels.
 	 */

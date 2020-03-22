@@ -1214,7 +1214,7 @@ public class Viewer {
 	 * <br>
 	 * If Options.JPedalActionHandler is the type then the <b>newHandler</b> should be of the form <b>Map</b> which contains Command Integers, mapped
 	 * onto their respective <b>org.jpedal.examples.viewer.gui.swing.JPedalActionHandler</b> implementations. For example, to create a custom help
-	 * action, you would add to your map, Integer(Commands.HELP) -> JPedalActionHandler. For a tutorial on creating custom actions in the Viewer, see
+	 * action, you would add to your map, Integer(Commands.HELP) {@literal ->} JPedalActionHandler. For a tutorial on creating custom actions in the Viewer, see
 	 * <b>http://www.jpedal.org/support.php</b>
 	 * 
 	 * @param newHandler

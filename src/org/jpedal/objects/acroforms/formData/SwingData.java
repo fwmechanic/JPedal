@@ -117,7 +117,7 @@ public class SwingData extends ComponentData {
 	public void loseFocus() {}
 
 	/**
-	 * valid flag used by Javascript to allow rollback &nbsp
+	 * valid flag used by Javascript to allow rollback
 	 * 
 	 * @param ref
 	 *            - name of the field to change the value of

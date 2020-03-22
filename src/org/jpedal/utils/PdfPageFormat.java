@@ -213,7 +213,7 @@ public class PdfPageFormat {
 	}
 
 	/**
-	 * Find the best fitting <tt>PageFormat</tt< for a given page.
+	 * Find the best fitting <tt>PageFormat</tt> for a given page.
 	 * 
 	 * @param p
 	 *            The page to examine by PDF page number.
