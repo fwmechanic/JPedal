@@ -51,6 +51,7 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -1250,8 +1251,11 @@ public class OutputDisplay extends BaseDisplay {
 					ByteArrayOutputStream bos = new ByteArrayOutputStream();
 					javax.imageio.ImageIO.write(savedImage, "PNG", bos);
 					bos.close();
-					sun.misc.BASE64Encoder b64 = new sun.misc.BASE64Encoder();
-					this.imageArray = new sun.misc.BASE64Encoder().encode(bos.toByteArray());
+					Base64.Encoder base64Encoder = Base64.getEncoder().withoutPadding();
+					this.imageArray = base64Encoder.encodeToString(bos.toByteArray());
+
+					// sun.misc.BASE64Encoder b64 = new sun.misc.BASE64Encoder();
+					// this.imageArray = new sun.misc.BASE64Encoder().encode(bos.toByteArray());
 					this.imageArray = this.imageArray.replace("\r\n", "\\\r\n"); // \ is required at EOLs as defined in JS
 				}
 				catch (IOException e) {
@@ -1898,7 +1902,11 @@ public class OutputDisplay extends BaseDisplay {
 					ByteArrayOutputStream bos = new ByteArrayOutputStream();
 					javax.imageio.ImageIO.write(img, "PNG", bos);
 					bos.close();
-					this.imageArray = new sun.misc.BASE64Encoder().encode(bos.toByteArray());
+
+					Base64.Encoder base64Encoder = Base64.getEncoder().withoutPadding();
+					this.imageArray = base64Encoder.encodeToString(bos.toByteArray());
+
+					// this.imageArray = new sun.misc.BASE64Encoder().encode(bos.toByteArray());
 					this.imageArray = this.imageArray.replace("\r\n", "\\\r\n"); // \ is required at EOLs as defined in JS
 				}
 				catch (IOException e) {
